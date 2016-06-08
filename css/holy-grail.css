@@ -1,0 +1,40 @@
+.HolyGrail,
+.HolyGrail-body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Pacifico', cursive;
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .HolyGrail-body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .HolyGrail-content{
+    flex: 1;
+   
+ 
+  }
+  .HolyGrail-nav, .HolyGrail-ads {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}
+#map {
+       flex: 1;
+       background-color: #CCC;
+       margin: auto;
+       border-radius: 15px;
+      }
+h1 {
+    text-align: center;
+    color: 	#4169E1; 
+}
+a {
+    text-decoration: none;
+    color: 	#4169E1; 
+    }

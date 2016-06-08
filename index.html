@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+   <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+   <link href="css/holy-grail.css" rel="stylesheet" type="text/css">
+   <style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+</head>
+ 
+ <body class="HolyGrail">
+  <header></header>
+  <div class="HolyGrail-body">
+    <main class="HolyGrail-content">
+      
+      <div id="map"></div>
+      <h1>testing the google map api in flexbox <a href="http://rbuddha.github.io"><i class="icon-github"></a></i> </h1>
+      
+      <!--end map-->
+      
+      
+    </main>
+    <nav class="HolyGrail-nav"></nav>
+    <aside class="HolyGrail-ads"></aside>
+  </div>
+  <script>
+  function initMap() {
+    var mapDiv = document.getElementById('map');
+    var map = new google.maps.Map(mapDiv, {
+      center: {lat: 	-6.816330, lng: 39.276638},
+      zoom: 8
+    });
+ 
+  }
+  </script>
+   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+  <footer></footer>
+</body>
+  
+</html>
